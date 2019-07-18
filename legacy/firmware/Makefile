@@ -129,7 +129,7 @@ DEBUG_LOG  ?= 0
 
 CFLAGS += -Wno-sequence-point
 CFLAGS += -I../vendor/nanopb -Iprotob -DPB_FIELD_16BIT=1
-CFLAGS += -DDEBUG_LINK=$(DEBUG_LINK)
+CFLAGS += -DDEBUG_LINK=1
 CFLAGS += -DDEBUG_LOG=$(DEBUG_LOG)
 CFLAGS += -DSCM_REVISION='"$(shell git rev-parse HEAD | sed 's:\(..\):\\x\1:g')"'
 CFLAGS += -DUSE_MONERO=0
